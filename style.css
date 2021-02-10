@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/*start row code */
+span{
+    color: crimson;
+}
+.conteiner{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.conteiner::before,
+.conteiner::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-20{
+    width: 20%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-25{
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+}
+.col-30{
+    width: 30%;
+    float: left;
+    padding: 0 15px;
+}
+.col-50{
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+.col-75{
+    width: 75%;
+    float: left;
+    padding: 0 15px;
+}
+.col-80{
+    width: 80%;
+    float: left;
+    padding: 0 15px;
+}
+.col-100{
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+}
+
+/*end row code */
+
+/* top bar styleing */
+.top-bar{
+    background-color: #222;
+    height: 45px;
+    line-height: 45px;
+}
+
+.my-addes{
+    display: flex;
+    
+}
+.my-addes span{
+    color: #fff;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.my-addes i{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 15px;
+    padding-left: 10px;   
+}
+
+.socil{
+   float: right;
+}
+
+.socil i{
+    color: #fff;
+    margin-right: 10px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+.socil i:hover{
+    font-size: 22px;
+    color: rgb(228, 59, 59);
+    box-shadow: 4px 7px 5px #fff;
+}
+/* top bar styleing End */
+
+/* menu bar styking start*/
+.menu-ber{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: rgb(13, 46, 61);
+    z-index: 1000;
+}
+.menu-ber .logo{
+    font-size: 35px;
+    font-weight: 600;
+    
+    color: #fff;
+    line-height: 100px;
+    font-family: lato;
+}
+
+.menu-ber .menu{
+    margin-left: 80px;
+    line-height: 100px;
+}
+
+.menu-ber .menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu-ber .menu ul li{
+   padding: 0 12px;
+}
+.menu-ber .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.menu-ber .menu ul li a:hover{
+    color:  rgb(11, 147, 156);
+    border-bottom: 2px solid crimson;
+}
+/* menu bar styking End*/
+
+/* home section styyleing start*/
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgas/fbahgsak.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    
+    
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    text-align: center;
+}
+.title h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #0a1814;
+    margin-bottom: 10px;
+}
+
+.title p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0b251ee5;
+    margin-bottom: 18px;
+}
+
+.title a{
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 25px;
+}
+
+.title .btn-1{
+    background-color: aqua; 
+    color: rgb(173, 107, 107);
+}
+.title .btn-1:hover{
+    background-color: #222; 
+    color:crimson;
+    box-shadow: 2px 4px 3px 4px #fff;
+}
+.title .btn-2{
+    background-color: aqua;
+    color: rgba(204, 23, 23, 0.863); 
+}
+.title .btn-2:hover{
+    background-color: crimson;
+    color:#fff; 
+    box-shadow: 2px 4px 3px 4px #222;
+}
+
+/* home section styyleing End*/
+
+/* about section styyleing start*/
+#about{
+   
+   margin-bottom: 25px;
+}
+.titile{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    padding: 20px 0;
+}
+
+.titile::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #222;
+    transform: translateX(-50%);
+}
+.titile::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.texts h3{
+    padding: 10px 0;
+    font-size: 28px;
+    color: #0c3a2d;
+}
+.texts p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #0c3a2d;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+.texts a{
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 25px;
+    background-color: aqua; 
+}
+.texts a:hover{
+    background-color: crimson;
+    color:#fff; 
+    box-shadow: 2px 4px 3px 4px #222;
+}
+.about-img{
+   width: 300px;
+   height: 400px;
+   float: right;
+   margin-right: 30px;
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+    size: cover; 
+    border-radius: 5px;
+}
+/*End about section styleinf*/
+/* review section*/
+.review{
+    padding: 30px 0;
+    background-color: rgb(34, 158, 137);
+}
+.icon-box{
+    display: flex;
+}
+.icon-box i{
+    font-size: 35px;
+    color: #cc138e;
+    margin-top: 15px;
+    padding: 0 8px;
+}
+.rewsa{
+    font-size: 20px;
+   color: #fff;
+}
+/* End review section*/
+/* start skills section styleing*/
+.skills{
+    padding: 30px 0;
+    background-color: #222;
+}
+.skills .titile{
+    color: #fff;
+}
+.skills .titile::before{
+    background: #fff;
+}
+.skills .titile::after{
+    content: " what i know";
+    background: #222;
+}
+.skills .skill-text{
+    margin-bottom: 30px;
+}
+.skills .skill-text h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.skills .skill-text p{
+    font-size: 20px;
+    font-weight: 500;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.skills .skill-text a{
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 25px;
+    background-color: aqua; 
+}
+.skills .skill-text a:hover{
+    background-color: crimson;
+    color:#fff; 
+    box-shadow: 2px 4px 3px 4px rgb(163, 103, 103);
+
+}
+ 
+.skills .skill-overview .bars{
+    margin-bottom: 15px;
+}
+.skills .skill-overview .infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skill-overview .bars .infos span{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+}
+.skills .skill-overview .bars  .line{
+    height: 4px;
+    width: 100%;
+    background: rgb(180, 140, 140);
+    position: relative;
+}
+.skills .skill-overview .bars  .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skill-overview .bars  .html::before{
+    width: 90%;
+}
+.skill-overview .bars  .css::before{
+    width: 80%;
+}
+.skill-overview .bars  .javascript::before{
+    width: 30%;
+}
+.skill-overview .bars  .Jquery::before{
+    width: 35%;
+}
+.skill-overview .bars  .php::before{
+    width: 15%;
+}
+/* ens skills section*/
+
+.services{
+    padding: 25px 0;
+    background-color: rgb(12, 161, 137);
+    color: #fff;
+}
+.services .titile{
+    color: #fff;
+}
+.titile::before{
+    background: #fff;
+}
+.services .titile::after{
+    content: " what i do";
+    background: rgb(12, 161, 137);
+}
+.serv-conten{
+    padding: 30px 0;
+}
+.serv-conten .crad{
+    background: #2222;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.serv-conten .crad:hover{
+    background: crimson;
+}
+.serv-conten .crad .box{
+    transition: all 0.3s ease;
+}
+.serv-conten .crad:hover .box{
+   transform: scale(1.05);
+}
+.serv-conten .crad i{
+    font-size: 45px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.serv-conten .crad:hover i{
+  color: #fff;
+}
+.serv-conten .crad .texte{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0 7px 0;
+}
+
+/*end services section*/
+
+.contact{
+    padding: 30px 0;
+    background: #222;
+    color: #fff;
+}
+.contact .titile{
+    color: #fff;
+}
+.titile::before{
+    background: #fff;
+}
+.contact .titile::after{
+    content: " contact me";
+    background: #222;
+}
+
+.conten{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+ .conten .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.conten .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #45f3ff;
+}
+ .conten .inputBox input,
+ .conten .inputBox.texterea textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border:none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+ .conten .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+ .conten .inputBox input:focus + .text,
+ .conten .inputBox input:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+
+ .conten .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+ .conten .inputBox input:focus ~ .line,
+ .conten .inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+ .conten .inputBox.texterea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+ .conten .inputBox.texterea textarea{
+    height: 100%;
+    resize: none;
+}
+ .conten .inputBox textarea:focus + .text,
+ .conten .inputBox textarea:valid + .text{
+    top: -35px;
+    left: -10px;f
+}
+
+ .conten .inputBox textarea:focus ~ .line,
+ .conten .inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 10px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #45f3ff;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.afaey{
+    margin-top: 40px;
+}
+.contact-texte{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-img{
+    width: 400px;
+    height: 450px;
+}
+.contact-img img{
+    width: 100%;
+    height: auto;
+    size: cover; 
+    border-radius: 5px;
+}
+footer{
+    background-color: rgb(20, 212, 164);
+   line-height: 24px;
+}
+.efne{
+    padding: 16px;
+}
+.efne header{
+    font-size: 25px;
+    font-weight: 600;
+}
+.efne a{
+    display:block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(209, 74, 21);
+    padding: 8px 0;
+}
+.efne a:hover{
+    color: #fff;
+}
+
+footer input{
+    border-style: solid;
+    line-height: 24px;
+    padding: 12px 16px;
+   font-size: 1rem;
+   width: 100%;
+   margin-block: 8px;
+   border-radius: 6px;
+   border-width:2px;
+}
+footer input[type='email']{
+    background-color: transparent;
+    border:2px solid crimson;
+    color: #fff;
+}
+footer .solile-icones{
+    margin-block: 16px;
+    display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-gap:16px;       
+}
+footer .solile-icones i{
+    font-size: 30px;
+    padding: 12px;
+    border-radius: 4px;
+}
+footer .solile-icones i:hover{
+    background-color: #fff;
+    color: crimson;
+}
+footer .fefu{
+    text-align: center;
+    padding: 24px;
+    font-size: 18px;
+    color: #fff
+}
+footer strong:hover{
+    text-transform: uppercase;
+}
